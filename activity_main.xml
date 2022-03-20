@@ -4,31 +4,108 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
     tools:context=".MainActivity">
 
+  <RelativeLayout
+      android:id="@+id/line1"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_marginLeft="45dp"
+      android:layout_marginTop="45dp">
 
-    <TextView
-        android:id="@+id/Text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Today work"
-        android:textSize="40dp"
-        android:textColor="#FF74A4D3"></TextView>
+  <Button
+      android:id="@+id/button1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="basic c"
+      android:textSize="34dp"></Button>
+</RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/line2"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+    android:layout_below="@id/line1"
+    android:layout_marginLeft="45dp"
+    android:layout_marginTop="45dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:text="basic c++"
+      android:textSize="34dp"
+      android:id="@+id/button2"></Button>
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/line3"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_below="@id/line2"
+      android:layout_marginLeft="45dp"
+      android:layout_marginTop="45dp">
 
     <Button
-        android:id="@+id/Button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@id/Text1"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="275dp"
-        android:text="click to view"
-        android:textSize="25dp"
-        >
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="basic python"
+        android:textSize="29dp"></Button>
+  </RelativeLayout>
 
-    </Button>
+  <RelativeLayout
+      android:id="@+id/line4"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_toRightOf="@id/line1"
+      android:layout_marginLeft="45dp"
+      android:layout_marginTop="45dp"
+      >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:text="basic java"
+      android:textSize="29dp"
+      android:id="@+id/button4"></Button>
+  </RelativeLayout>
+  <RelativeLayout
+      android:id="@+id/line5"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+     android:layout_toRightOf="@id/line2"
+      android:layout_below="@id/line4"
+    android:layout_marginLeft="45dp"
+    android:layout_marginTop="45dp">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:text="Basic html"
+      android:textSize="29dp"
+        android:id="@+id/button5"></Button>
+  </RelativeLayout>
+  <RelativeLayout
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+     android:layout_below="@id/line5"
+    android:layout_toRightOf="@id/line3"
+      android:layout_marginLeft="45dp"
+      android:layout_marginTop="45dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="BASIC css"
+         android:textSize="29dp"
+        android:id="@+id/button6"></Button>
+  </RelativeLayout>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+     android:text="Just a touch to grow"
+    android:layout_alignParentBottom="true"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="56dp"
+    android:textSize="34dp"
+    android:textStyle="italic"
+    android:textColor="#4357D5"></TextView>
 </RelativeLayout>
